@@ -31,17 +31,31 @@ export default function Footer() {
   };
 
   return (
-    <footer style={{ background: "#00002E", borderTop: "1px solid rgba(255,182,6,0.15)" }}>
+    <footer
+      style={{
+        background: "#00002E",
+        borderTop: "1px solid rgba(255,182,6,0.15)",
+      }}
+    >
       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="font-display text-2xl font-bold mb-4">
               <span style={{ color: "#FFB606" }}>OSEM</span>{" "}
-              <span className="font-light" style={{ color: "rgba(255,255,255,0.9)" }}>Technologies</span>
+              <span
+                className="font-light"
+                style={{ color: "rgba(255,255,255,0.9)" }}
+              >
+                Technologies
+              </span>
             </div>
-            <p className="text-sm leading-relaxed mb-5" style={{ color: "rgba(255,255,255,0.55)" }}>
-              Professional digital solutions built in Ghana. Websites, apps, security, and more.
+            <p
+              className="text-sm leading-relaxed mb-5"
+              style={{ color: "rgba(255,255,255,0.55)" }}
+            >
+              Professional digital solutions built in Ghana. Websites, apps,
+              security, and more.
             </p>
             <div className="flex gap-3">
               {["LinkedIn", "Twitter", "GitHub"].map((soc) => (
@@ -63,7 +77,10 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="font-display font-bold text-sm uppercase tracking-widest mb-5" style={{ color: "#FFB606" }}>
+            <h4
+              className="font-display font-bold text-sm uppercase tracking-widest mb-5"
+              style={{ color: "#FFB606" }}
+            >
               Services
             </h4>
             <ul className="space-y-2.5">
@@ -83,7 +100,10 @@ export default function Footer() {
 
           {/* Products */}
           <div>
-            <h4 className="font-display font-bold text-sm uppercase tracking-widest mb-5" style={{ color: "#FFB606" }}>
+            <h4
+              className="font-display font-bold text-sm uppercase tracking-widest mb-5"
+              style={{ color: "#FFB606" }}
+            >
               Products
             </h4>
             <ul className="space-y-2.5">
@@ -92,7 +112,11 @@ export default function Footer() {
                   <a
                     href={p.href}
                     target={p.href.startsWith("http") ? "_blank" : undefined}
-                    rel={p.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                    rel={
+                      p.href.startsWith("http")
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
                     className="text-sm transition-colors duration-200 hover:text-white"
                     style={{ color: "rgba(255,255,255,0.55)" }}
                   >
@@ -105,7 +129,10 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="font-display font-bold text-sm uppercase tracking-widest mb-5" style={{ color: "#FFB606" }}>
+            <h4
+              className="font-display font-bold text-sm uppercase tracking-widest mb-5"
+              style={{ color: "#FFB606" }}
+            >
               Company
             </h4>
             <ul className="space-y-2.5">
@@ -127,7 +154,7 @@ export default function Footer() {
                 📞 +233 25 636 4076
               </p>
               <p className="text-xs" style={{ color: "rgba(255,255,255,0.4)" }}>
-                ✉️ osemtechnologies@gmail.com
+                ✉️ adminosemtech@gmail.com
               </p>
               <p className="text-xs" style={{ color: "rgba(255,255,255,0.4)" }}>
                 📍 Accra, Ghana
